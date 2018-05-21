@@ -43,7 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</section>
 
 	<div class="main supporting" id="tools" role="main">
-		<div class="explanation" id="encounter" role="article">
+		<div class="resource-blurb" id="encounter" role="article">
 			<h3>Encounter Running</h3>
 			<dl>
 			<dt><b>Roll Initiative!</b>
@@ -58,7 +58,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</dl>
 		</div>
 
-		<div class="participation" id="npc" role="article">
+		<div class="resource-blurb" id="npc" role="article">
 			<h3>NPCs</h3>
 			<dl>
     			<dt><b>Descriptions</b></dt>
@@ -105,7 +105,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</dl>
 		</div>
 		
-		<div class="participation" id="location" role="article">
+		<div class="resource-blurb" id="location" role="article">
 			<h3>Locations</h3>
 			<dl>
 				<dt><b>Population Centers</b></dt>
@@ -122,9 +122,53 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<dd>
 						<dl>
 							<dt><a href="http://donjon.bin.sh/5e/dungeon/">donjon random dungeon generator</a></dt>
-							<dd>LEFT OFF HERE</dd>
-							<dd><b></b></dd>
-							<dd><b></b></dd>
+							<dd>Generates a simple map based on party level and # of members. Generates traps and doors and descriptions.</dd>
+							<dd><b>Inputs:</b> Dungeon Name, level, party size, motif, random seed, map style, grid, layout, size, peripheral egress (y/n), stairs (y/n), room layout, room size, doors, corridors, remove deadends (y/n).</dd>
+							<dd><b>Outputs:</b> Exports an html with highlighting and hyperlinking capabilities for rooms. TSV output is an options for impoting into dungeon painter studio. Also offers a print of the map with a view for DM and a view for players as PNG.</dd>
+							<dd><b>Side Note:</b> Map size of "fine" can be used for a house layout.</dd>
+						</dl>
+					</dd>
+				<dt><b>Taverns/Inns</b></dt>
+					<dd>
+						<dl>
+							<dt><a href="donjon.bin.sh/fantasy/inn">donjon random inn generator</a></dt>
+							<dd>Upon load, auto generates a text description random inn. May remake the inn by refreshing the page or changing any of the options.</dd>
+							<dd><b>Inputs:</b> Inn type, patron type</dd>
+							<dd><b>Outputs:</b> A text description of the generated inn including: the inn's name, location, description, innkeeper, menu items, patrons (brief npc text description), and rumors.
+						</dl>
+						<dl>
+							<dt><a href="inkwellideas.com/free-tools/random-inn-generator-floorplan">inkwellideas floorplan generator</a></dt>
+							<dd>Generates a combination of images to assemble a floor plan of an inn.</dd>
+							<dd><b>Inputs:</b> Inn length, inn width, 2nd level (random/y/n), 2nd floor open area (random/open/filled), 2nd floor connected rooms (random/yes/no), 2nd floor secret door (random/yes/no), indoor privies (random/yes/no), cellar (random/yes/no), backroom (random/yes/no), back exit (random/yes/no), hearth (random/yes/no), common room - if large length (random/yes/no), 1st floor rooms - if large length and width (random/yes/no), density (random/crowded/average/sparse).</dd>
+							<dd><b>Outputs:</b> A sketch combination of images assembled into a floor plan of an in with labels. A key is provided explaining the labels for special features on the map.
+						</dl>
+					</dd>
+				<dt><b>World Map</b></dt>
+					<dd>
+						<dl>
+							<dt><a href="http://www.d20srd.org/fantasy/world/">d20srd generate fantasy world</a></dt>
+							<dd>A fantastic resource that generates a tiled world map with terrain, locations, and labels into a PNG that may be saved (via right click).</dd>
+							<dd><b>Inputs:</b> world name, random seed, map style (atlas/antique), font (default/black castle/cloister black/english runes/livingstone/morris roman/angerthas/tengwar), % water(1-100), % ice (1-100), geography (yes/no), rivers (yes/no), cities and castles (yes/no), hex grid (check box), label map (check box), random button</dd>
+							<dd><b>Outputs:</b> A PNG world map with labels (if desired) is displayed. It is can be downloaded as a complete png by "saving the image as".</dd>
+						</dl>
+					</dd>
+			</dl>
+		</div>
+		
+		<div class="resource-blurb" id="everything-else" role="article">
+			<h3>Everything Else</h3>
+			<dl>
+				<dt><b>donjon</b></dt>
+					<dd>
+						<dl>
+							<dt><a href="https://donjon.bin.sh/5e/random/">donjon generator</a></dt>
+						</dl>
+					</dd>
+				<dt><b>autorolls table</b></dt>
+					<dd>
+						<dl>
+							<dt><a href="https://autorolltables.github.io/#">auto rolls table</a></dt>
+							<dd>Great for TONS of descriptions of things based on 5e roll tables, from plot hooks to loot to useless objects and settlements....etc.</dd>
 						</dl>
 					</dd>
 			</dl>
@@ -243,15 +287,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
-<div id="container">
-    <h1>Welcome to the DM's Assistant for 5e!</h1>
+<!-- <div id="container"> -->
+<!--     <h1>Welcome to the DM's Assistant for 5e!</h1> -->
 
-    <div id="body">
-    <a href="http://improved-initiative.com/e/jg8fbjp6"> Improved Initiative for Encounters </a>
+<!--     <div id="body"> -->
+<!--     <a href="http://improved-initiative.com/e/jg8fbjp6"> Improved Initiative for Encounters </a> -->
 
-    </div>
+<!--     </div> -->
 
-</div>
+<!-- </div> -->
 
 </body>
 
