@@ -54,4 +54,5 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['new_map'] = 'places/mod_wizardrawn';
+$route['dc_prob_calc'] = 'dc_calc/prob';
 
